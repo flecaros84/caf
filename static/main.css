@@ -1,0 +1,42 @@
+/* CSS para la tipografía especificada */
+/* Título principal */
+h1 {
+    font-weight: bold;
+    font-size: 2.6875rem;
+}
+
+/* Subtítulos y textos grandes */
+h2 {
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+/* Títulos párrafos interiores */
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Texto bajada */
+h4 {
+    font-weight: normal; /* Regular */
+    font-size: 1.25rem;
+}
+
+/* Título 5to nivel */
+h5 {
+    font-weight: normal; /* Regular */
+    font-size: 1rem;
+}
+
+/* Body */
+p {
+    font-weight: normal; /* Regular */
+    font-size: 1rem;
+}
+
+/* Texto pequeño de apoyo */
+small {
+    font-weight: normal; /* Regular */
+    font-size: 0.8125rem;
+}

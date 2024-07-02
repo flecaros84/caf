@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Formulario html-->
+<br>
+<div class="container">
+<form action="http://127.0.0.1:5000/form" method="post">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+    <input type="text" class="form-control w-50" id="name" name="name">
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control w-50" id="email" name="email" aria-describedby="emailHelp">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="careerSelect">Selecciona tu carrera</label>
+        <select class="form-control w-50" id="carrera" name="carrera" aria-label="Default select example">
+            <option value="Técnico en Electricidad y Automatización Industrial">Técnico en Electricidad y Automatización Industrial</option>
+            <option value="Ingeniería en Informática">Ingeniería en Informática</option>
+            <option value="Ingeniería en Construcción">Ingeniería en Construcción</option>
+            <option value="Ingeniería En Administración Mención Finanzas">Ingeniería En Administración Mención Finanzas</option>
+            <option value="Técnico de Enfermería">Técnico de Enfermería</option>
+            <option value="Turismo y Hotelería">Turismo y Hotelería</option>
+            <option value="Auditoria">Auditoria</option>
+            <option value="Técnico en Gestión Logística">Técnico en Gestión Logística</option>
+            <option value="Ingeniería en Mecánica Automotriz y Autotrónica">Ingeniería en Mecánica Automotriz y Autotrónica</option>
+            <option value="Ingeniería en Administración Mención Gestión de Personas">Ingeniería en Administración Mención Gestión de Personas</option>
+            <option value="Técnico en Odontología">Técnico en Odontología</option>
+            <option value="Ingeniería en Maquinaria y Vehículos Pesados">Ingeniería en Maquinaria y Vehículos Pesados</option>
+            <option value="Ingeniería en Marketing Digital">Ingeniería en Marketing Digital</option>
+            <option value="Técnico en Mecánica Automotriz y Autotrónica">Técnico en Mecánica Automotriz y Autotrónica</option>
+            <option value="Técnico en Mantenimiento Electromecánico">Técnico en Mantenimiento Electromecánico</option>
+            <option value="Técnico en Administración">Técnico en Administración</option>
+            <option value="Técnico en Maquinaria y Vehículos Pesados">Técnico en Maquinaria y Vehículos Pesados</option>
+            <option value="Ingeniería en Administración Mención Innovación y Emprendimiento">Ingeniería en Administración Mención Innovación y Emprendimiento</option>
+            <option value="Técnico Topógrafo">Técnico Topógrafo</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="scheduleSelect">Selecciona tu horario</label>
+        <select class="form-control w-50" id="horario" name="horario" aria-label="Default select example">
+            <option value="Lunes      08:30 a 09:50">Lunes      08:30 a 09:50</option>
+            <option value="Lunes      10:00 a 11:20">Lunes      10:00 a 11:20</option>
+            <option value="Lunes      11:30 a 12:50">Lunes      11:30 a 12:50</option>
+            <option value="Lunes      14:30 a 15:30">Lunes      14:30 a 15:30</option>
+            <option value="Martes     08:30 a 09:50">Martes     08:30 a 09:50</option>
+            <option value="Martes     10:00 a 11:20">Martes     10:00 a 11:20</option>
+            <option value="Martes     11:30 a 12:50">Martes     11:30 a 12:50</option>
+            <option value="Martes     14:30 a 15:30">Martes     14:30 a 15:30</option>            
+            <option value="Miércoles  08:30 a 09:50">Miércoles  08:30 a 09:50</option>
+            <option value="Miércoles  10:00 a 11:20">Miércoles  10:00 a 11:20</option>
+            <option value="Miércoles  11:30 a 12:50">Miércoles  11:30 a 12:50</option>
+            <option value="Miércoles  14:30 a 15:30">Miércoles  14:30 a 15:30</option>
+            <option value="Jueves     08:30 a 09:50">Jueves     08:30 a 09:50</option>
+            <option value="Jueves     10:00 a 11:20">Jueves     10:00 a 11:20</option>
+            <option value="Jueves     11:30 a 12:50">Jueves     11:30 a 12:50</option>
+            <option value="Jueves     14:30 a 15:30">Jueves     14:30 a 15:30</option>
+            <option value="Viernes    08:30 a 09:50">Viernes    08:30 a 09:50</option>
+            <option value="Viernes    10:00 a 11:20">Viernes    10:00 a 11:20</option>
+            <option value="Viernes    11:30 a 12:50">Viernes    11:30 a 12:50</option>
+            <option value="Viernes    14:30 a 15:30">Viernes    14:30 a 15:30</option>
+            <option value="Sabado     09:00 a 10:20">Sabado     09:00 a 10:20</option>
+            <option value="Sabado     10:30 a 11:50">Sabado     10:30 a 11:50</option>
+            <option value="Sabado     12:00 a 13:20">Sabado     12:00 a 13:20</option>
+            <option value="Sabado     13:30 a 14:50">Sabado     13:30 a 14:50</option>
+            <option value="Sabado     15:00 a 16:20">Sabado     15:00 a 16:20</option>
+        </select>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+{% endblock %}

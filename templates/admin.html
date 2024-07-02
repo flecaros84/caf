@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Visualizador de datos en la base sql-->
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Carrera</th>
+        <th scope="col">Horario</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user in user_data%}
+
+        <tr>
+          <th scope="row">{{user[0]}}</th>
+          <td>{{user[1]}}</td>
+          <td>{{user[2]}}</td>
+          <td>{{user[3]}}</td>
+          <td>{{user[4]}}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </tbody>
+  </table>
+  </div>
+{% endblock %}
